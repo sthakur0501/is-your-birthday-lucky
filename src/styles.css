@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --dark-color: #16697a;
+  --light-color: #82c0cc;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 2rem 1rem;
+  background-color: var(--dark-color);
+}
+
+.container {
+  padding: 1rem;
+  border: 10px solid black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--light-color);
+}
+
+.container-centered {
+  max-width: 40%;
+  margin: auto;
+}
+
+label,
+p {
+  font-size: large;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: x-large;
+}
+
+input {
+  font-weight: bold;
+  font-size: large;
+  border: 3px solid black;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 1rem;
+  background-color: var(--dark-color);
+  color: white;
+}
+
+button {
+  max-width: 70%;
+  margin: auto;
+  cursor: pointer;
+  /* border:2px solid black; */
+  border: 5px solid black;
+  border-radius: 10px;
+  font-size: large;
+  background-color: var(--dark-color);
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+button:hover {
+  background-color: rgb(189, 235, 243);
+  color: black;
+}
+
+@media (max-width: 1200px) {
+  .container-centered {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-centered {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-centered {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-centered {
+    max-width: 80%;
+  }
+}
